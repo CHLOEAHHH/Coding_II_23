@@ -1,0 +1,12 @@
+Objects: 
+1.) Snakes
+2.) Desitination
+3.) The Box itself
+Properties:
+1.) Size, price, specific packaging needs
+2.) The delivery address, estimated shipping, delivery company
+3.) Size, container, Tape
+Behaviors: 
+1.) match size to correct box size, verify snake is in the box, 
+2.) Track how far the package is from delivery address, make sure package is going to right address, pay delivery company
+3.) match box size to snake size, match container size to snack as well, ensure box is secure with tape
