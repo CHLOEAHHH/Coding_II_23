@@ -11,3 +11,6 @@ public class FlipCoin {
         }
     }
 
+//heads
+//heads
+//tails
