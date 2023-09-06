@@ -9,11 +9,11 @@ public class SwitchEx2 {
             case 'A':
                 aCount++;
                 System.out.println("Count of A  " + aCount);
-                break;
+        
             case 'B':
                 bCount++;
                 System.out.println("Count of B  " + bCount);
-                break;
+              
             case 'C':
                 cCount++;
                 System.out.println("Count of B  " + cCount);
