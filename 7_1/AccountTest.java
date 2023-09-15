@@ -9,6 +9,9 @@ public class AccountTest{
 
     accountOne.displayCustomer();
     accountOne.withdrawl(0);
+
+    SavingsBond bondOne = new SavingsBond(40, 1500.00);
+    bondOne.displayBonds();
     }
 
 }
