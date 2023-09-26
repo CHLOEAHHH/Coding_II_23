@@ -1,21 +1,58 @@
 public class ProblemTwo {
-
-    public static void main(String[] args){
+    
 // x = a + b, c = b + x
-        int a = 1;
-        int totalSum = 0;
-        for (int i = 1; i <= 4000000;){
-           
-            if (i % 2 == 0){
-                i = a + i;
+//Fn = Fn-1+Fn-2
+//fields
+long fnOne = 0L;
+long fnTwo = 1L;
+long fn = 0L;
+long totalEvenSum;
+//constructors none
+//methods
+    public void evenFibNumbe(){
+     //   for (int b = 0; b < 4000000; b++){ 
+            while ( fn < 4000000 ){
+            //1 = 1 + 0
+            //2 = 1 + 1
+            //3 = 2 + 1
+            fn = fnOne + fnTwo;
+
+            if(fn % 2 == 0){
+                totalEvenSum += fn;
             }
-            if (a != i - 1){
-                a = a + 1;
+            //0 becomes 1
+            //1 becomes 1
+            //1 becomes 2
+            fnTwo = fnOne;
+            //1 becomes 1
+            //1 becomes 2
+            //2 becomes 3
+            fnOne = fn;
             }
-            if(i<=4000){
-            totalSum = i;
-            }
-        }
-        System.out.println("The total sum is: ");
+        System.out.println(fn);
+        System.out.println(totalEvenSum);
     }
 }
+        
+    //tesitng space on a small scale
+   /* public void mathTest(){
+        for (int b = 0; b < 10; b++){ 
+            //1 = 1 + 0
+            //2 = 1 + 1
+            //3 = 2 + 1
+            fn = fnOne + fnTwo;
+            //0 becomes 1
+            //1 becomes 1
+            //1 becomes 2
+            fnTwo = fnOne;
+            //1 becomes 1
+            //1 becomes 2
+            //2 becomes 3
+            fnOne = fn;
+            if(fn % 2 == 0){
+                totalEvenSum += fn;
+            }
+        System.out.println(fn);
+        }
+        System.out.println(totalEvenSum);
+        */
