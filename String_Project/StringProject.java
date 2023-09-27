@@ -55,7 +55,7 @@ public class StringProject {
      public String eachWordOnALine(){
       String temporaryString = myString;
         String newString = " ";
-        String spaceComp = " ";
+        char spaceComp = ' ';
 
         for (int i = 0; i < myString.length(); i++){
             if (temporaryString.charAt(i) == spaceComp){
@@ -65,7 +65,75 @@ public class StringProject {
             }
         }
 
-        return newString();
+        return newString;
      }  
+
+     public int wordCount(){
+        int wordCounter = 0;
+        char spaceComp = ' ';
+        for (int i = 0; i < myString.length(); i++){
+            if (myString.charAt(i) == spaceComp){
+                wordCounter++;
+            }
+        }
+        wordCounter++;
+        return wordCounter;
+     }
+
+     public int characterCount(){
+
+         int characterCounter = 0;
+        char spaceComp = ' ';
+
+        for (int i = 0; i < myString.length(); i++){
+           if (myString.charAt(i) != spaceComp){
+            characterCounter++;
+           }
+        }
+        return characterCounter;
+     }
+
+     public int averageWordLength(){
+
+        int wordCounter = wordCount();
+        int characterCounter = characterCount();
+
+        int averageWordL = characterCounter / wordCounter;
+
+        return averageWordL;
+
+     }
+
+     public int vowelCount(){
+
+        int vowelCounter = 0;
+        char[] vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+
+         for (int i = 0; i < myString.length(); i++){
+
+            for (char vowel : vowels){
+                
+                if (myString.charAt(i) == vowel){
+                    vowelCounter++;
+                    break;
+                }
+            }
+         }
+        return vowelCounter;
+     }
+
+     public String substrCount(String str){
+
+        int subsTringOccurance = 0;
+
+        for (int i = 0; i < myString.length(); i++){
+
+            if (){
+                
+            }
+
+        }
+
+     }
 }
 
