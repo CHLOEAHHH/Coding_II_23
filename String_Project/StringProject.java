@@ -52,6 +52,7 @@ public class StringProject {
         }
          return reversalString;
         }
+
      public String eachWordOnALine(){
       String temporaryString = myString;
         String newString = " ";
@@ -122,18 +123,45 @@ public class StringProject {
         return vowelCounter;
      }
 
-     public String substrCount(String str){
+    /* public String substrCount(String str){
 
         int subsTringOccurance = 0;
 
         for (int i = 0; i < myString.length(); i++){
 
             if (){
-                
+
             }
 
         }
 
-     }
+     }  */
+
+     public boolean isPalindrome(){
+
+        boolean isPalindromee = true;
+        String temporaryString = " ";
+
+        for (int i = 0; i < myString.length(); i++){
+            char charComparision = myString.charAt(i);
+            temporaryString += charComparision;
+            }
+
+        temporaryString = temporaryString.toLowerCase();
+
+        String reversalString = "";
+
+        for (int i = myString.length() - 1; i >= 0; i--){
+            char charComparision = myString.charAt(i);
+            reversalString += charComparision;
+        }
+         
+        if (temporaryString.equals(reversalString)){
+            isPalindromee = false;
+        } 
+        return isPalindromee;
+    }
+    
 }
+
 
