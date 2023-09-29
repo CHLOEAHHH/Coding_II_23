@@ -2,10 +2,10 @@
 
 public class Prisoner {
     //Fields 
-    public String name;
-    public double height;
-    public int sentence;
-    public Cell prisonCell;
+    private String name;
+    private double height;
+    private int sentence;
+    private Cell prisonCell;
     
     //Constructor
     public Prisoner(String name, double height, int sentence, Cell prisonCell){
@@ -44,5 +44,36 @@ public class Prisoner {
             System.out.println("Door closes");
         }
     }  */
-    
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public double getHeight(){
+        return height;
+    }
+
+    public void setHeight(double height){
+        this.height = height;
+    }
+
+    public int getSentence(){
+        return sentence;
+    }
+
+    public void setSentence(int sentence){
+        this.sentence = sentence;
+    }
+
+    public Cell prisonCell(){
+        return prisonCell;
+    }
+
+    public void setPrisonCell(Cell prisonCell){
+        this.prisonCell = prisonCell;
+    }
 }

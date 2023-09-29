@@ -5,7 +5,7 @@ public class PrisonTest {
         Cell bubbaCell = new Cell("Cell One", false, 5435);
         Prisoner bubba = new Prisoner("Bubba", 2.08, 4,bubbaCell);
         
-        bubba.display(false);
+        bubba.display();
         bubbaCell.setDoorOpen(4356);
 
     }
