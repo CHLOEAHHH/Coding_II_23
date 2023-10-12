@@ -3,6 +3,7 @@ public class ExceptionEx1 {
     public static void main(String args[]) {
 
         int[] nums = {3, 2, 6, 1};
+
         badUse(nums);
     }
 
@@ -11,7 +12,9 @@ public class ExceptionEx1 {
 
         for (int i = 0; i < vals.length; i++) {
             int index = vals[i];
+            if (index < vals.length){
             total += vals[index];
+            }
         }
          System.out.println(total);
     }
