@@ -28,7 +28,7 @@ public class Team {
 
         System.out.println("*********RESULTS*********");
         System.out.println(teamName);
-        System.out.println("Wins: " + winTotal + ", " + "Losses: " + lossTotal + ", " + "Tie Total: " + tieTotal);
+        System.out.println("Wins: " + winTotal + " , " + "Losses: " + lossTotal + " , " + "Tie Total: " + tieTotal);
         System.out.println("Points Scored: " + totalGoals + "Total Goals Allowed: " + totalGoalsAllowed);
     }
 
@@ -62,5 +62,12 @@ public class Team {
     }
     public void setTotalGoalsAllowed(int totalGoalsAllowed) {
         this.totalGoalsAllowed = totalGoalsAllowed;
+    }
+    public int getTotalGoals() {
+        return totalGoals;
+    }
+
+    public void setTotalGoals(int totalGoals) {
+        this.totalGoals = totalGoals;
     }
 }
